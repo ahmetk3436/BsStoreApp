@@ -578,32 +578,39 @@
     ]
   },
   "packageFolders": {
-    "/Users/ahmet/.nuget/packages/": {}
+    "C:\\Users\\ahmet\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/ahmet/Documents/GitHub/BsStoreApp/Repositories/Repositories.csproj",
+      "projectUniqueName": "C:\\Users\\ahmet\\Documents\\GitHub\\BsStoreApp\\Repositories\\Repositories.csproj",
       "projectName": "Repositories",
-      "projectPath": "/Users/ahmet/Documents/GitHub/BsStoreApp/Repositories/Repositories.csproj",
-      "packagesPath": "/Users/ahmet/.nuget/packages/",
-      "outputPath": "/Users/ahmet/Documents/GitHub/BsStoreApp/Repositories/obj/",
+      "projectPath": "C:\\Users\\ahmet\\Documents\\GitHub\\BsStoreApp\\Repositories\\Repositories.csproj",
+      "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ahmet\\Documents\\GitHub\\BsStoreApp\\Repositories\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/ahmet/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\ahmet\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/ahmet/Documents/GitHub/BsStoreApp/Entities/Entities.csproj": {
-              "projectPath": "/Users/ahmet/Documents/GitHub/BsStoreApp/Entities/Entities.csproj"
+            "C:\\Users\\ahmet\\Documents\\GitHub\\BsStoreApp\\Entities\\Entities.csproj": {
+              "projectPath": "C:\\Users\\ahmet\\Documents\\GitHub\\BsStoreApp\\Entities\\Entities.csproj"
             }
           }
         }
@@ -639,7 +646,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.103/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

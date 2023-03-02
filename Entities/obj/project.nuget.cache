@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MedDQybYVHM6l6pCrX8CoGMOkheSa6yNsB7XFdQf0wRY6LanPA0/ZOO9TpYBjBrvcp4NNWKHlnwaIICZrwMo4g==",
+  "dgSpecHash": "iqPSkDP42QnSYGVIX6NPATrPRo3HwPB0gP2c4jb9d4XckZ5bZJ0wwnv4mJUoRtyjngGYVED7vsVXNPh4rvmjqw==",
   "success": true,
-  "projectFilePath": "/Users/ahmet/Documents/GitHub/BsStoreApp/Entities/Entities.csproj",
+  "projectFilePath": "C:\\Users\\ahmet\\Documents\\GitHub\\BsStoreApp\\Entities\\Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

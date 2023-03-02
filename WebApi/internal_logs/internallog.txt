@@ -1,0 +1,9 @@
+2023-03-02 17:05:42.4526 Info Message Template Auto Format enabled
+2023-03-02 17:05:42.5802 Info Registered target NLog.Targets.FileTarget(Name=logFile)
+2023-03-02 17:05:42.6107 Info Validating config: TargetNames=logFile, ConfigItems=14, FilePath=C:\Users\ahmet\Documents\GitHub\BsStoreApp\WebApi\nlog.config
+2023-03-02 17:35:17.5991 Info Message Template Auto Format enabled
+2023-03-02 17:35:17.6790 Info Registered target NLog.Targets.FileTarget(Name=logFile)
+2023-03-02 17:35:17.7002 Info Validating config: TargetNames=logFile, ConfigItems=14, FilePath=C:\Users\ahmet\Documents\GitHub\BsStoreApp\WebApi\nlog.config
+2023-03-02 17:38:34.6546 Info Message Template Auto Format enabled
+2023-03-02 17:38:34.7579 Info Registered target NLog.Targets.FileTarget(Name=logFile)
+2023-03-02 17:38:34.7818 Info Validating config: TargetNames=logFile, ConfigItems=14, FilePath=C:\Users\ahmet\Documents\GitHub\BsStoreApp\WebApi\nlog.config
