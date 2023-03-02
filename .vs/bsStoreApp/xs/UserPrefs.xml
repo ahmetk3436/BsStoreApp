@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{54F8AB91-A292-404D-92AB-D78140CAEB96}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.WebApi PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Services/ServiceManager.cs">
+    <Files>
+      <File FileName="Services/Contracts/IBookService.cs" Line="11" Column="57" />
+      <File FileName="Services/BookManager.cs" Line="58" Column="29" />
+      <File FileName="Services/Contracts/IServiceManager.cs" Line="6" Column="34" />
+      <File FileName="Services/ServiceManager.cs" Line="10" Column="33" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="bsStoreApp" expanded="True">
+            <Node name="Repositories" expanded="True">
+              <Node name="Contracts" expanded="True" />
+            </Node>
+            <Node name="Services" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Contracts" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Services FirstBuild="True" />
+</Properties>

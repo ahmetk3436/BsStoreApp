@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "rQH8sLtIUtHEBMtJpPh2HrBheSK3tdvoyMZHBRopZo899FPc1TT/SzF2YgKuBbeGBMUWlYXk7vFzv2kWYRyPjg==",
+  "dgSpecHash": "MedDQybYVHM6l6pCrX8CoGMOkheSa6yNsB7XFdQf0wRY6LanPA0/ZOO9TpYBjBrvcp4NNWKHlnwaIICZrwMo4g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ahmet\\source\\repos\\btkakademi\\bsStoreApp\\Entities\\Entities.csproj",
+  "projectFilePath": "/Users/ahmet/Documents/GitHub/BsStoreApp/Entities/Entities.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

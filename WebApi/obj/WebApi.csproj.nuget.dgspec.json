@@ -1,31 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ahmet\\source\\repos\\btkakademi\\bsStoreApp\\WebApi\\WebApi.csproj": {}
+    "/Users/ahmet/Documents/GitHub/BsStoreApp/WebApi/WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ahmet\\source\\repos\\btkakademi\\bsStoreApp\\Entities\\Entities.csproj": {
+    "/Users/ahmet/Documents/GitHub/BsStoreApp/Entities/Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahmet\\source\\repos\\btkakademi\\bsStoreApp\\Entities\\Entities.csproj",
+        "projectUniqueName": "/Users/ahmet/Documents/GitHub/BsStoreApp/Entities/Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\ahmet\\source\\repos\\btkakademi\\bsStoreApp\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahmet\\source\\repos\\btkakademi\\bsStoreApp\\Entities\\obj\\",
+        "projectPath": "/Users/ahmet/Documents/GitHub/BsStoreApp/Entities/Entities.csproj",
+        "packagesPath": "/Users/ahmet/.nuget/packages/",
+        "outputPath": "/Users/ahmet/Documents/GitHub/BsStoreApp/Entities/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ahmet\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/ahmet/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -59,40 +53,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.103/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ahmet\\source\\repos\\btkakademi\\bsStoreApp\\Repositories\\Repositories.csproj": {
+    "/Users/ahmet/Documents/GitHub/BsStoreApp/Repositories/Repositories.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahmet\\source\\repos\\btkakademi\\bsStoreApp\\Repositories\\Repositories.csproj",
+        "projectUniqueName": "/Users/ahmet/Documents/GitHub/BsStoreApp/Repositories/Repositories.csproj",
         "projectName": "Repositories",
-        "projectPath": "C:\\Users\\ahmet\\source\\repos\\btkakademi\\bsStoreApp\\Repositories\\Repositories.csproj",
-        "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahmet\\source\\repos\\btkakademi\\bsStoreApp\\Repositories\\obj\\",
+        "projectPath": "/Users/ahmet/Documents/GitHub/BsStoreApp/Repositories/Repositories.csproj",
+        "packagesPath": "/Users/ahmet/.nuget/packages/",
+        "outputPath": "/Users/ahmet/Documents/GitHub/BsStoreApp/Repositories/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ahmet\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/ahmet/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\ahmet\\source\\repos\\btkakademi\\bsStoreApp\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\ahmet\\source\\repos\\btkakademi\\bsStoreApp\\Entities\\Entities.csproj"
+              "/Users/ahmet/Documents/GitHub/BsStoreApp/Entities/Entities.csproj": {
+                "projectPath": "/Users/ahmet/Documents/GitHub/BsStoreApp/Entities/Entities.csproj"
               }
             }
           }
@@ -128,43 +116,37 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.103/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\ahmet\\source\\repos\\btkakademi\\bsStoreApp\\WebApi\\WebApi.csproj": {
+    "/Users/ahmet/Documents/GitHub/BsStoreApp/WebApi/WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ahmet\\source\\repos\\btkakademi\\bsStoreApp\\WebApi\\WebApi.csproj",
+        "projectUniqueName": "/Users/ahmet/Documents/GitHub/BsStoreApp/WebApi/WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "C:\\Users\\ahmet\\source\\repos\\btkakademi\\bsStoreApp\\WebApi\\WebApi.csproj",
-        "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ahmet\\source\\repos\\btkakademi\\bsStoreApp\\WebApi\\obj\\",
+        "projectPath": "/Users/ahmet/Documents/GitHub/BsStoreApp/WebApi/WebApi.csproj",
+        "packagesPath": "/Users/ahmet/.nuget/packages/",
+        "outputPath": "/Users/ahmet/Documents/GitHub/BsStoreApp/WebApi/obj/",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\ahmet\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/ahmet/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\ahmet\\source\\repos\\btkakademi\\bsStoreApp\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\ahmet\\source\\repos\\btkakademi\\bsStoreApp\\Entities\\Entities.csproj"
+              "/Users/ahmet/Documents/GitHub/BsStoreApp/Entities/Entities.csproj": {
+                "projectPath": "/Users/ahmet/Documents/GitHub/BsStoreApp/Entities/Entities.csproj"
               },
-              "C:\\Users\\ahmet\\source\\repos\\btkakademi\\bsStoreApp\\Repositories\\Repositories.csproj": {
-                "projectPath": "C:\\Users\\ahmet\\source\\repos\\btkakademi\\bsStoreApp\\Repositories\\Repositories.csproj"
+              "/Users/ahmet/Documents/GitHub/BsStoreApp/Repositories/Repositories.csproj": {
+                "projectPath": "/Users/ahmet/Documents/GitHub/BsStoreApp/Repositories/Repositories.csproj"
               }
             }
           }
@@ -179,6 +161,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.JsonPatch": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.3, )"
@@ -223,7 +209,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.103/RuntimeIdentifierGraph.json"
         }
       }
     }
