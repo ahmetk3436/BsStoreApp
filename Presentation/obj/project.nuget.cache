@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0nO5XIjOD/xfc8autv+rTzMMW/usf6xWHkWCKxlpSeBtEoHtSfA0BgZpkgiQd6U1q+XuHHQNi1JBHyK3eHbRTg==",
+  "dgSpecHash": "f6FeK84cDNBFpvkFyxn6f4Kh8e+Pm07NTo90vwluQ+6SyY0jXWaoccwxDPtuGz2czwl+H5Md3BNKHRjbIDRi6A==",
   "success": true,
   "projectFilePath": "C:\\Users\\ahmet\\Documents\\GitHub\\BsStoreApp\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
@@ -61,6 +61,7 @@
     "C:\\Users\\ahmet\\.nuget\\packages\\system.io.filesystem\\4.0.1\\system.io.filesystem.4.0.1.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\system.io.filesystem.primitives\\4.0.1\\system.io.filesystem.primitives.4.0.1.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\system.linq\\4.1.0\\system.linq.4.1.0.nupkg.sha512",
+    "C:\\Users\\ahmet\\.nuget\\packages\\system.linq.dynamic.core\\1.3.1\\system.linq.dynamic.core.1.3.1.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\system.linq.expressions\\4.1.0\\system.linq.expressions.4.1.0.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\system.objectmodel\\4.0.12\\system.objectmodel.4.0.12.nupkg.sha512",
     "C:\\Users\\ahmet\\.nuget\\packages\\system.reflection\\4.1.0\\system.reflection.4.1.0.nupkg.sha512",

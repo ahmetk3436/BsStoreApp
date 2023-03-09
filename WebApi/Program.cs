@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using NLog;
-using Repositories.EFCore;
+using Services;
 using Services.Contracts;
 using WebApi.Extensions;
 
@@ -17,7 +16,6 @@ builder.Services.AddControllers(config =>
     .AddCustomCsvFormatter()
     .AddXmlDataContractSerializerFormatters()
     .AddApplicationPart(typeof(Presentation.AssemblyReference).Assembly)
-    .AddNewtonsoftJson();
     ;
 builder.Services.Configure<ApiBehaviorOptions>(options =>
 {
@@ -32,7 +30,12 @@ builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureServiceManager();
 builder.Services.ConfigureLoggerService();
+builder.Services.ConfigureActionFilters();
+builder.Services.ConfigureCors();
+builder.Services.ConfigureDataSharper();
+builder.Services.AddCustomMediaTypes();
 builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.AddScoped<IBookLinks, BookLinks>();
 var app = builder.Build();
 
 var logger = app.Services.GetRequiredService<ILoggerService>();
@@ -49,7 +52,7 @@ if (app.Environment.IsProduction())
     app.UseHsts();
 }
 app.UseHttpsRedirection();
-
+app.UseCors("CorsPolicy");
 app.UseAuthorization();
 
 app.MapControllers();

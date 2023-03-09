@@ -27,7 +27,7 @@ namespace WebApi.Utilities.Formatters
                 }
             } else
             {
-                FormatCsv(buffer, (BookDto)context.Object);
+                FormatCsv(buffer, (BookDto)context.Object!);
             }
             await response.WriteAsync(buffer.ToString());
         }

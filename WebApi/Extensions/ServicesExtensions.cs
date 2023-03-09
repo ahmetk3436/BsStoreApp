@@ -3,6 +3,10 @@ using Repositories.EFCore;
 using Repositories.Contracts;
 using Services.Contracts;
 using Services;
+using Entities.DTOs;
+using Presentation.ActionFilters;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Formatters;
 
 namespace WebApi.Extensions
 {
@@ -26,6 +30,52 @@ namespace WebApi.Extensions
         public static void ConfigureLoggerService(this IServiceCollection service)
         {
             service.AddSingleton<ILoggerService,LoggerManager>();
+        }
+        public static void ConfigureActionFilters(this IServiceCollection service)
+        {
+           service.AddScoped<ValidationFilterAttribute>();
+            service.AddSingleton<LogFilterAttribute>(); 
+            service.AddScoped<ValidateMediaTypeAttribute>();
+        }
+        public static void ConfigureCors(this IServiceCollection service)
+        {
+            service.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy", builder =>
+                builder.AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+                .WithExposedHeaders("X-Pagination"));
+            });
+        }
+        public static void ConfigureDataSharper(this IServiceCollection service)
+        {
+            service.AddScoped<IDataSharper<BookDto>, DataSharper<BookDto>>();
+        }
+        public static void AddCustomMediaTypes(this IServiceCollection service)
+        {
+            service.Configure<MvcOptions>(config =>
+            {
+                var systemTextJsonOutputFormatter = config
+                .OutputFormatters
+                .OfType<SystemTextJsonOutputFormatter>()?.FirstOrDefault();
+
+                if (systemTextJsonOutputFormatter is not null)
+                {
+                    systemTextJsonOutputFormatter.SupportedMediaTypes
+                    .Add("application/vnd.btkakademi.hateoas+json");
+
+                }
+
+                var xmlOutputFormatter = config
+                 .OutputFormatters
+                 .OfType<XmlDataContractSerializerOutputFormatter>()?.FirstOrDefault();
+                if (xmlOutputFormatter is not null)
+                {
+                    xmlOutputFormatter.SupportedMediaTypes
+                  .Add("application/vnd.btkakademi.hateoas+xml");
+                }
+            });
         }
     }
 }

@@ -1,13 +1,15 @@
 ﻿using Entities.DTOs;
 using Entities.Exceptions;
-using Entities.Models;
-using Microsoft.AspNetCore.Http;
+using Entities.RequestParameters;
 using Microsoft.AspNetCore.JsonPatch;
 using Microsoft.AspNetCore.Mvc;
+using Presentation.ActionFilters;
 using Services.Contracts;
+using System.Text.Json;
 
 namespace Presentation.Controllers
 {
+    [ServiceFilter(typeof(LogFilterAttribute))]
     [ApiController]
     [Route("api/books")]
     public class BooksController : ControllerBase
@@ -18,11 +20,19 @@ namespace Presentation.Controllers
             _manager = context;
         }
 
+        [HttpHead]
         [HttpGet]
-        public async Task<IActionResult> GetAllBooksAsync()
+        [ServiceFilter(typeof(ValidateMediaTypeAttribute))]
+        public async Task<IActionResult> GetAllBooksAsync([FromQuery] BookParameters bookParameters)
         {
-                var books = await _manager.BookService.GetAllBooksAsync(false);
-                return Ok(books);
+            var linkParameters = new LinkParameters()
+            {
+                BookParameters = bookParameters,
+                HttpContext = HttpContext
+            };
+                var result = await _manager.BookService.GetAllBooksAsync(linkParameters,false);
+            Response.Headers.Add("X-Pagination",JsonSerializer.Serialize(result.metadata));
+            return result.linkResponse.HasLinks ? Ok(result.linkResponse.LinkedEntities) : Ok(result.linkResponse.ShapedEntities);  
         }
         [HttpGet("{id}")]
         public async Task<IActionResult> GetOneBookAsync(int id)
@@ -35,27 +45,19 @@ namespace Presentation.Controllers
                 return Ok(book);
            
         }
+        
+        [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPost]
         public async Task<IActionResult> CreateBookAsync([FromBody] BookDtoForInsertion book)
         {
-            if (book is null)
-                return BadRequest();
-            if (!ModelState.IsValid)
-                return UnprocessableEntity(ModelState);
-               var bookDto = await _manager.BookService.CreateOneBookAsync(book);
+            var bookDto = await _manager.BookService.CreateOneBookAsync(book);
             return StatusCode(201, bookDto);
            
         }
+        [ServiceFilter(typeof(ValidationFilterAttribute))]
         [HttpPut("{id}")]
         public async Task<IActionResult> UpdateBookAsync(int id, [FromBody] BookDtoForUpdate bookDto)
         {   
-           
-                if (bookDto == null)
-                {
-                throw new BookNotFoundException(id);
-            }
-            if (!ModelState.IsValid)
-                return UnprocessableEntity(ModelState);
             await _manager.BookService.UpdateOneBookAsync(id, bookDto, false);
                 return NoContent();
           
@@ -91,6 +93,12 @@ namespace Presentation.Controllers
 
             await _manager.BookService.SaveChangesForPatchAsync(result.bookDtoForUpdate, result.book);
             return NoContent();
+        }
+        [HttpOptions]
+        public IActionResult GetBooksOptions()
+        {
+            Response.Headers.Add("Allow", "GET, PUT, POST, PATCH, DELETE, HEAD, OPTIONS");
+            return Ok();
         }
     }
 }
