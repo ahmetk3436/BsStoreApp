@@ -9,9 +9,11 @@ using System.Text.Json;
 
 namespace Presentation.Controllers
 {
+    [ApiVersion("1.0")]
     [ServiceFilter(typeof(LogFilterAttribute))]
     [ApiController]
     [Route("api/books")]
+    [ResponseCache(CacheProfileName = "5mins")]
     public class BooksController : ControllerBase
     {
         private readonly IServiceManager _manager;
@@ -21,8 +23,9 @@ namespace Presentation.Controllers
         }
 
         [HttpHead]
-        [HttpGet]
+        [HttpGet(Name = "GetAllBooksAsync")]
         [ServiceFilter(typeof(ValidateMediaTypeAttribute))]
+      
         public async Task<IActionResult> GetAllBooksAsync([FromQuery] BookParameters bookParameters)
         {
             var linkParameters = new LinkParameters()
@@ -47,7 +50,7 @@ namespace Presentation.Controllers
         }
         
         [ServiceFilter(typeof(ValidationFilterAttribute))]
-        [HttpPost]
+        [HttpPost(Name = "CreateBookAsync")]
         public async Task<IActionResult> CreateBookAsync([FromBody] BookDtoForInsertion book)
         {
             var bookDto = await _manager.BookService.CreateOneBookAsync(book);

@@ -194,3 +194,4 @@ C:\Users\ahmet\Documents\GitHub\BsStoreApp\WebApi\bin\Debug\net6.0\NLog.Extensio
 C:\Users\ahmet\Documents\GitHub\BsStoreApp\WebApi\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\ahmet\Documents\GitHub\BsStoreApp\WebApi\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\ahmet\Documents\GitHub\BsStoreApp\WebApi\bin\Debug\net6.0\System.Linq.Dynamic.Core.dll
+C:\Users\ahmet\Documents\GitHub\BsStoreApp\WebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Versioning.dll

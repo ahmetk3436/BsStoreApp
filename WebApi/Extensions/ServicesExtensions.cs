@@ -7,6 +7,8 @@ using Entities.DTOs;
 using Presentation.ActionFilters;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Formatters;
+using Microsoft.AspNetCore.Mvc.Versioning;
+using Marvin.Cache.Headers;
 
 namespace WebApi.Extensions
 {
@@ -65,6 +67,8 @@ namespace WebApi.Extensions
                     systemTextJsonOutputFormatter.SupportedMediaTypes
                     .Add("application/vnd.btkakademi.hateoas+json");
 
+                    systemTextJsonOutputFormatter.SupportedMediaTypes
+                    .Add("application/vnd.btkakademi.apiroot+json");
                 }
 
                 var xmlOutputFormatter = config
@@ -74,7 +78,34 @@ namespace WebApi.Extensions
                 {
                     xmlOutputFormatter.SupportedMediaTypes
                   .Add("application/vnd.btkakademi.hateoas+xml");
+                    xmlOutputFormatter.SupportedMediaTypes
+                   .Add("application/vnd.btkakademi.apiroot+xml");
                 }
+            });
+        }
+        public static void ConfigureVersioning(this IServiceCollection service)
+        {
+            service.AddApiVersioning(opt =>
+            {
+                opt.ReportApiVersions = true;
+                opt.AssumeDefaultVersionWhenUnspecified = true;
+                opt.DefaultApiVersion = new ApiVersion(1, 0);
+                opt.ApiVersionReader = new HeaderApiVersionReader("api-version");
+            });
+        }
+        public static void ConfigureResponseCaching(this IServiceCollection service)
+        {
+            service.AddResponseCaching();
+        }
+        public static void ConfigureHttpCacheHeaders(this IServiceCollection service)
+        {
+            service.AddHttpCacheHeaders(expirationOpt =>
+            {
+                expirationOpt.MaxAge = 80;
+                expirationOpt.CacheLocation = CacheLocation.Public;
+            }, validationOpt =>
+            {
+                validationOpt.MustRevalidate = false;
             });
         }
     }

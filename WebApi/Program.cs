@@ -12,6 +12,10 @@ builder.Services.AddControllers(config =>
 {
     config.RespectBrowserAcceptHeader= true;
     config.ReturnHttpNotAcceptable = true;
+    config.CacheProfiles.Add("5mins", new CacheProfile()
+    {
+        Duration = 300
+    });
 })
     .AddCustomCsvFormatter()
     .AddXmlDataContractSerializerFormatters()
@@ -36,6 +40,9 @@ builder.Services.ConfigureDataSharper();
 builder.Services.AddCustomMediaTypes();
 builder.Services.AddAutoMapper(typeof(Program));
 builder.Services.AddScoped<IBookLinks, BookLinks>();
+builder.Services.AddApiVersioning();
+builder.Services.ConfigureResponseCaching();
+builder.Services.AddHttpCacheHeaders();
 var app = builder.Build();
 
 var logger = app.Services.GetRequiredService<ILoggerService>();
@@ -53,6 +60,8 @@ if (app.Environment.IsProduction())
 }
 app.UseHttpsRedirection();
 app.UseCors("CorsPolicy");
+app.UseResponseCaching(); // Add Caching After Cors !!!
+app.UseHttpCacheHeaders();
 app.UseAuthorization();
 
 app.MapControllers();
