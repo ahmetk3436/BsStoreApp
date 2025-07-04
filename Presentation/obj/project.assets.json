@@ -31,18 +31,6 @@
           "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
-      "Marvin.Cache.Headers/6.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/Marvin.Cache.Headers.dll": {}
-        },
-        "runtime": {
-          "lib/net6.0/Marvin.Cache.Headers.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
       "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -1389,21 +1377,6 @@
         "automapper.extensions.microsoft.dependencyinjection.nuspec",
         "icon.png",
         "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
-      ]
-    },
-    "Marvin.Cache.Headers/6.1.0": {
-      "sha512": "XHUeOdMfZrtRHXsWiqRUrebBl4U2SGew8Cr7Y/tHaGfiY/fbajnq4vRt5ktlkUnMebcpfvl8RJjAglu1KxWwYQ==",
-      "type": "package",
-      "path": "marvin.cache.headers/6.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "lib/net5.0/Marvin.Cache.Headers.dll",
-        "lib/net6.0/Marvin.Cache.Headers.dll",
-        "lib/netcoreapp3.1/Marvin.Cache.Headers.dll",
-        "marvin.cache.headers.6.1.0.nupkg.sha512",
-        "marvin.cache.headers.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
@@ -4159,7 +4132,6 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "Entities >= 1.0.0",
-      "Marvin.Cache.Headers >= 6.1.0",
       "Microsoft.AspNetCore.JsonPatch >= 7.0.3",
       "Microsoft.AspNetCore.Mvc.Core >= 2.2.5",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 6.0.14",
@@ -4168,42 +4140,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ahmet\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/ahmetcoskunkizilkaya/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ahmet\\Documents\\GitHub\\BsStoreApp\\Presentation\\Presentation.csproj",
+      "projectUniqueName": "/Users/ahmetcoskunkizilkaya/BsStoreApp/Presentation/Presentation.csproj",
       "projectName": "Presentation",
-      "projectPath": "C:\\Users\\ahmet\\Documents\\GitHub\\BsStoreApp\\Presentation\\Presentation.csproj",
-      "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ahmet\\Documents\\GitHub\\BsStoreApp\\Presentation\\obj\\",
+      "projectPath": "/Users/ahmetcoskunkizilkaya/BsStoreApp/Presentation/Presentation.csproj",
+      "packagesPath": "/Users/ahmetcoskunkizilkaya/.nuget/packages/",
+      "outputPath": "/Users/ahmetcoskunkizilkaya/BsStoreApp/Presentation/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ahmet\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/ahmetcoskunkizilkaya/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\ahmet\\Documents\\GitHub\\BsStoreApp\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\ahmet\\Documents\\GitHub\\BsStoreApp\\Entities\\Entities.csproj"
+            "/Users/ahmetcoskunkizilkaya/BsStoreApp/Entities/Entities.csproj": {
+              "projectPath": "/Users/ahmetcoskunkizilkaya/BsStoreApp/Entities/Entities.csproj"
             },
-            "C:\\Users\\ahmet\\Documents\\GitHub\\BsStoreApp\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\ahmet\\Documents\\GitHub\\BsStoreApp\\Services\\Services.csproj"
+            "/Users/ahmetcoskunkizilkaya/BsStoreApp/Services/Services.csproj": {
+              "projectPath": "/Users/ahmetcoskunkizilkaya/BsStoreApp/Services/Services.csproj"
             }
           }
         }
@@ -4212,16 +4177,17 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
-          "Marvin.Cache.Headers": {
-            "target": "Package",
-            "version": "[6.1.0, )"
-          },
           "Microsoft.AspNetCore.JsonPatch": {
             "target": "Package",
             "version": "[7.0.3, )"
@@ -4250,12 +4216,22 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.33, 6.0.33]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.33, 6.0.33]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/RuntimeIdentifierGraph.json"
       }
     }
   }

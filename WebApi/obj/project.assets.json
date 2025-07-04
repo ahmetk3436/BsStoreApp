@@ -2,24 +2,6 @@
   "version": 3,
   "targets": {
     "net6.0": {
-      "AspNetCoreRateLimit/5.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Microsoft.Extensions.Caching.Abstractions": "6.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "6.0.3",
-          "Microsoft.Extensions.Options": "6.0.0",
-          "Newtonsoft.Json": "13.0.2"
-        },
-        "compile": {
-          "lib/net6.0/AspNetCoreRateLimit.dll": {}
-        },
-        "runtime": {
-          "lib/net6.0/AspNetCoreRateLimit.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
       "AutoMapper/12.0.0": {
         "type": "package",
         "dependencies": {
@@ -105,18 +87,6 @@
             "related": ".xml"
           }
         }
-      },
-      "Marvin.Cache.Headers/6.1.0": {
-        "type": "package",
-        "compile": {
-          "lib/net6.0/Marvin.Cache.Headers.dll": {}
-        },
-        "runtime": {
-          "lib/net6.0/Marvin.Cache.Headers.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
       },
       "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
         "type": "package",
@@ -1805,7 +1775,6 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "Entities": "1.0.0",
-          "Marvin.Cache.Headers": "6.1.0",
           "Microsoft.AspNetCore.JsonPatch": "7.0.3",
           "Microsoft.AspNetCore.Mvc.Core": "2.2.5",
           "Microsoft.AspNetCore.Mvc.NewtonsoftJson": "6.0.14",
@@ -1853,18 +1822,6 @@
     }
   },
   "libraries": {
-    "AspNetCoreRateLimit/5.0.0": {
-      "sha512": "6fq9+o1maGADUmpK/PvcF0DtXW2+7bSkIL7MDIo/agbIHKN8XkMQF4oze60DO731WaQmHmK260hB30FwPzCmEg==",
-      "type": "package",
-      "path": "aspnetcoreratelimit/5.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "aspnetcoreratelimit.5.0.0.nupkg.sha512",
-        "aspnetcoreratelimit.nuspec",
-        "lib/net6.0/AspNetCoreRateLimit.dll"
-      ]
-    },
     "AutoMapper/12.0.0": {
       "sha512": "0Rmg0zI5AFu1O/y//o9VGyhxKjhggWpk9mOA1tp0DEVx40c61bs+lnQv+0jUq8XbniF7FKgIVvI1perqiMtLrA==",
       "type": "package",
@@ -1948,21 +1905,6 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
-      ]
-    },
-    "Marvin.Cache.Headers/6.1.0": {
-      "sha512": "XHUeOdMfZrtRHXsWiqRUrebBl4U2SGew8Cr7Y/tHaGfiY/fbajnq4vRt5ktlkUnMebcpfvl8RJjAglu1KxWwYQ==",
-      "type": "package",
-      "path": "marvin.cache.headers/6.1.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "README.md",
-        "lib/net5.0/Marvin.Cache.Headers.dll",
-        "lib/net6.0/Marvin.Cache.Headers.dll",
-        "lib/netcoreapp3.1/Marvin.Cache.Headers.dll",
-        "marvin.cache.headers.6.1.0.nupkg.sha512",
-        "marvin.cache.headers.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Authentication.Abstractions/2.2.0": {
@@ -4869,7 +4811,6 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "AspNetCoreRateLimit >= 5.0.0",
       "Entities >= 1.0.0",
       "Microsoft.AspNetCore.JsonPatch >= 7.0.3",
       "Microsoft.AspNetCore.Mvc.NewtonsoftJson >= 6.0.14",
@@ -4885,48 +4826,41 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ahmet\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/Users/ahmetcoskunkizilkaya/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ahmet\\Documents\\GitHub\\BsStoreApp\\WebApi\\WebApi.csproj",
+      "projectUniqueName": "/Users/ahmetcoskunkizilkaya/BsStoreApp/WebApi/WebApi.csproj",
       "projectName": "WebApi",
-      "projectPath": "C:\\Users\\ahmet\\Documents\\GitHub\\BsStoreApp\\WebApi\\WebApi.csproj",
-      "packagesPath": "C:\\Users\\ahmet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ahmet\\Documents\\GitHub\\BsStoreApp\\WebApi\\obj\\",
+      "projectPath": "/Users/ahmetcoskunkizilkaya/BsStoreApp/WebApi/WebApi.csproj",
+      "packagesPath": "/Users/ahmetcoskunkizilkaya/.nuget/packages/",
+      "outputPath": "/Users/ahmetcoskunkizilkaya/BsStoreApp/WebApi/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\ahmet\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/ahmetcoskunkizilkaya/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\ahmet\\Documents\\GitHub\\BsStoreApp\\Entities\\Entities.csproj": {
-              "projectPath": "C:\\Users\\ahmet\\Documents\\GitHub\\BsStoreApp\\Entities\\Entities.csproj"
+            "/Users/ahmetcoskunkizilkaya/BsStoreApp/Entities/Entities.csproj": {
+              "projectPath": "/Users/ahmetcoskunkizilkaya/BsStoreApp/Entities/Entities.csproj"
             },
-            "C:\\Users\\ahmet\\Documents\\GitHub\\BsStoreApp\\Presentation\\Presentation.csproj": {
-              "projectPath": "C:\\Users\\ahmet\\Documents\\GitHub\\BsStoreApp\\Presentation\\Presentation.csproj"
+            "/Users/ahmetcoskunkizilkaya/BsStoreApp/Presentation/Presentation.csproj": {
+              "projectPath": "/Users/ahmetcoskunkizilkaya/BsStoreApp/Presentation/Presentation.csproj"
             },
-            "C:\\Users\\ahmet\\Documents\\GitHub\\BsStoreApp\\Repositories\\Repositories.csproj": {
-              "projectPath": "C:\\Users\\ahmet\\Documents\\GitHub\\BsStoreApp\\Repositories\\Repositories.csproj"
+            "/Users/ahmetcoskunkizilkaya/BsStoreApp/Repositories/Repositories.csproj": {
+              "projectPath": "/Users/ahmetcoskunkizilkaya/BsStoreApp/Repositories/Repositories.csproj"
             },
-            "C:\\Users\\ahmet\\Documents\\GitHub\\BsStoreApp\\Services\\Services.csproj": {
-              "projectPath": "C:\\Users\\ahmet\\Documents\\GitHub\\BsStoreApp\\Services\\Services.csproj"
+            "/Users/ahmetcoskunkizilkaya/BsStoreApp/Services/Services.csproj": {
+              "projectPath": "/Users/ahmetcoskunkizilkaya/BsStoreApp/Services/Services.csproj"
             }
           }
         }
@@ -4935,16 +4869,17 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
-          "AspNetCoreRateLimit": {
-            "target": "Package",
-            "version": "[5.0.0, )"
-          },
           "Microsoft.AspNetCore.JsonPatch": {
             "target": "Package",
             "version": "[7.0.3, )"
@@ -4993,6 +4928,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.33, 6.0.33]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.osx-arm64",
+            "version": "[6.0.33, 6.0.33]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.33, 6.0.33]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -5001,7 +4950,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/RuntimeIdentifierGraph.json"
       }
     }
   }
